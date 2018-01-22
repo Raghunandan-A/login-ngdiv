@@ -1,0 +1,33 @@
+
+    <br>
+    <div class="way">
+    <label>name :</label>
+    <input [(ngModel)] = "TR.name"/>
+    <p>{{TR.name}}</p>
+    <p>{{TR.place}}</p>
+</div>
+    <br>
+
+    <button type="button" (click)="toggleExists()">Toggle Component</button>
+<hr>
+    <div *ngIf="exists"> 
+        hello
+    </div>
+    <br>
+   
+
+
+    <div style ="text-align:center">
+        <table class="style" >
+          <head>
+          <td>Emp Name</td>
+          <td>Dept Name</td>
+        </head>
+        <body>
+          <tr *ngFor='let x of Employees'>
+            <td>{{x.empname}}</td>
+            <td>{{x.deptname}}</td>
+          </tr>
+        </body>
+        </table>
+      </div>
