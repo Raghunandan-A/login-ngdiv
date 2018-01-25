@@ -1,7 +1,6 @@
 .style{
 
-    border : Solid 1px red;
-    width : 6%;
+    border : Solid 1px rgb(25, 0, 255);
     margin: auto
     
     }
@@ -9,11 +8,16 @@
     td
     {
     
-    border : Solid 1px red;
+    border : Solid 1px rgb(55, 0, 255);
    
     }
 
     .way{
-        width : 22%;
+      border: solid 1px rgb(0, 4, 255);
+     
     margin: auto
+    }
+    .rgy{
+        background-color: rgb(228, 179, 88);
+          
     }

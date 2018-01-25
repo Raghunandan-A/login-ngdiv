@@ -1,12 +1,23 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<img src='{{imagepath1}}'>
-<br>
-<a routerLink="/user"class="btn btn-primary">LOGIN</a>
-<br>
-<br>
-<a routerLink="/user2"class="btn btn-primary">NG-DIVS</a>
 
-<router-outlet></router-outlet>
+<div class="topnov">
+                
+        <a routerLink="/user" href="login" >LOGIN</a>
+        <a routerLink="/user2" href="ngdiv">NG_DIVS</a>
+   
+</div>
+<div class="row">
+        <div class="col-md-4">
+       
+        <div>
+                <img src='{{imagepath1}}'>
+        </div>
+        <br>
+       
 
-<br>
-
+        
+        </div>
+        <div class="col-md-6">
+        <router-outlet></router-outlet>
+        </div>
+    </div>

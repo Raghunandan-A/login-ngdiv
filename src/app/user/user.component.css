@@ -1,14 +1,4 @@
-.sty{
-   
-    width: 40%;
-    margin: auto;
-}
-.row form-group {
-    width : 40%;
-    margin : auto;
-}
 
-.table_block{
-    width : 40%;
-    margin: auto
+.form_inputs{
+    width: 70%;
 }

@@ -1,13 +1,14 @@
 
     <br>
+    <h2 class="rgy">TWO WAY DATA BINDING</h2>
     <div class="way">
-    <label>name :</label>
+    <label>Name :</label>
     <input [(ngModel)] = "TR.name"/>
     <p>{{TR.name}}</p>
     <p>{{TR.place}}</p>
 </div>
     <br>
-
+    <h2 class="rgy">NGIF</h2>
     <button type="button" (click)="toggleExists()">Toggle Component</button>
 <hr>
     <div *ngIf="exists"> 
@@ -16,18 +17,18 @@
     <br>
    
 
-
-    <div style ="text-align:center">
+    <h2 class="rgy">NGFOR</h2>
+    <div>
         <table class="style" >
-          <head>
-          <td>Emp Name</td>
-          <td>Dept Name</td>
-        </head>
-        <body>
+          <thead>
+          <td><b>Emp Name</b></td>
+          <td><b>Dept Name</b></td> 
+        </thead>
+        <tbody>
           <tr *ngFor='let x of Employees'>
             <td>{{x.empname}}</td>
             <td>{{x.deptname}}</td>
           </tr>
-        </body>
+        </tbody>
         </table>
       </div>

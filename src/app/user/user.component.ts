@@ -14,7 +14,8 @@ details:Array<object> = [{email : '',
 }]
 signIn(){ 
   var data = {email: this.email, password: this.password};
+  this.details.pop();
   this.details.push(data);
-  this.email=''; this.password = '';
+  this.email=''; this.password ='';
 }
 }

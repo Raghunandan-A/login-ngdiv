@@ -11,6 +11,7 @@ export class User2Component implements OnInit {
 
   ngOnInit() {
   }
+ columnSpan : number = 2;
   exists = true;
   toggleExists() {
     this.exists = !this.exists;
@@ -20,9 +21,9 @@ TR = {
   place : "Kurnool"
 }
 
-Employees = [{empname:'raghu', deptname:'Development'},
+Employees = [{empname:'Raghu', deptname:'Development'},
 {empname:'Devi', deptname:'Testing'},
-{empname:'Mounika', deptname:'Devevelopment'},
+{empname:'Mounika', deptname:'Development'},
 {empname:'Kumar', deptname:'Development'},
 ]
 
